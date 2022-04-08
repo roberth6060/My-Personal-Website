@@ -38,12 +38,8 @@ html {
 /* === Website layout structure ===  */
 body {
   font-size: 16px;
-  height: 100vh;
   line-height: 1.5;
-  margin: 0;
   outline: none;
-  padding: 0;
-  width: 100vw;
 }
 
 body .main-container {
@@ -52,6 +48,7 @@ body .main-container {
   overflow-y: scroll;
   -ms-scroll-snap-type: y proximity;
       scroll-snap-type: y proximity;
+  background: red;
 }
 
 body .main-container .section {
@@ -67,6 +64,7 @@ body .main-container .section {
   top: 0;
   width: calc(100vw - 270px);
   z-index: 0;
+  overflow-y: hidden;
 }
 
 body .main-container .section:nth-of-type(1) {
@@ -872,6 +870,31 @@ body .main-container .section .container .row .section-title h2::after {
 }
 
 .side .nav li a:hover {
+  color: #ff3333;
+  border-bottom: 1px solid #ff3333;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.side nav a {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  color: #F0E5DD;
+  border-bottom: 1px solid #F0E5DD;
+  padding: 15px 15px;
+}
+
+.side nav a i {
+  margin-right: 15px;
+}
+
+.side nav .active:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.side nav a:hover {
   color: #ff3333;
   border-bottom: 1px solid #ff3333;
   -webkit-transform: scale(1.05);

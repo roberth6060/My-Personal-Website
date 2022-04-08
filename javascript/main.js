@@ -26,13 +26,6 @@ if (freelanceStatus == "Available") {
     document.getElementById("freelance-status").style.fontWeight = "600";
 }
 
-/* =================================== Hover =================================== */
-// document.getElementsByClassName("hover").mouseleave(
-//     function () {
-//         $(this).removeClass("hover");
-//     }
-// );
-
 /* =================================== Typing animation =================================== */
 
 function mainText() {
@@ -53,21 +46,7 @@ function mainText() {
     });
 }
 /* =================================== Side Section =================================== */
-const nav = document.querySelector(".nav"),
-    navList = nav.querySelectorAll("li"),
-    totalNavList = navList.length;
-for (let i = -0; i < totalNavList; i++) {
-    const a = navList[i].querySelector("a");
-    a.addEventListener("click", function () {
-        // For lope that removes the "active" class
-        for (let j = 0; j < totalNavList; j++) {
-            navList[j].querySelector("a").classList.remove("active");
-        }
-        //add "active" class to clicked anchor tag:
-        this.classList.add("active");
-        showSection(this);
-    });
-}
+
 
 const navTogglerBtn = document.querySelector(".nav-toggler"),
     side = document.querySelector(".side");
@@ -77,9 +56,58 @@ navTogglerBtn.addEventListener("click", () => {
 
 function sideSectionTogglerBtn() {
     side.classList.toggle("open");
-    
     navTogglerBtn.classList.toggle("open");
-    // for(let i=0; i<totalSection; i++) {
-    //     allSection[i].classList.toggle("open")
-    // }
 }
+
+/* ============================== Nav-links onScroll to active ============================= */
+
+
+var sections = document.querySelectorAll("section");
+
+onscroll = function () {
+    var scrollPosition = document.documentElement.scrollTop;
+
+    sections.forEach((section) => {
+        if (
+            scrollPosition >= section.offsetTop - section.offsetHeight * 0.25 &&
+            scrollPosition <
+            section.offsetTop + section.offsetHeight - section.offsetHeight * 0.25
+        ) {
+            var currentId = section.attributes.id.value;
+            removeAllActiveClasses();
+            addActiveClass(currentId);
+        }
+    });
+};
+
+var removeAllActiveClasses = function () {
+    document.querySelectorAll("nav a").forEach((el) => {
+        el.classList.remove("active");
+    });
+};
+
+var addActiveClass = function (id) {
+    // console.log(id);
+    var selector = `nav a[href="#${id}"]`;
+    console.log(selector);
+    document.querySelector(selector).classList.add("active");
+};
+
+var navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+        var currentId = e.target.attributes.href.value;
+        var section = document.querySelector(currentId);
+        var sectionPos = section.offsetTop;
+        // section.scrollIntoView({
+        //   behavior: "smooth",
+        // });
+
+        window.scroll({
+            top: sectionPos,
+            behavior: "smooth",
+        });
+    });
+});

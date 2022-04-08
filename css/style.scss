@@ -20,7 +20,6 @@ $tablet: 768px;
 $laptop: 992px;
 $desktop: 1200px;
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -32,6 +31,7 @@ html {
     outline: none;
     padding: 0;
     text-decoration: none;
+
 }
 
 
@@ -59,19 +59,15 @@ html {
 
 body {
     font-size: 16px;
-    height: 100vh;
     line-height: 1.5;
-    margin: 0;
     outline: none;
-    padding: 0;
-    width: 100vw;
-
 
     .main-container {
         width: 100%;
         height: 100%;
         overflow-y: scroll;
         scroll-snap-type: y proximity;
+        background: red;
 
         .section {
             background: #dde8f0;
@@ -87,6 +83,7 @@ body {
             top: 0;
             width: calc(100vw - 270px);
             z-index: 0;
+            overflow-y: hidden;
 
             &:nth-of-type(1) {
                 // Targets homepage section (first child)
@@ -886,9 +883,39 @@ body {
 
     }
 
+    nav {
+
+        a {
+            font-size: 16px;
+            font-weight: 600;
+            display: block;
+            color: $txt-wht-200;
+            border-bottom: 1px solid $txt-wht-200;
+            padding: 15px 15px;
+
+            i {
+                margin-right: 15px;
+            }
+
+        }
+
+        .active:hover {
+            transform: scale(1);
+        }
+
+        a:hover {
+            color: $clr-org;
+            border-bottom: 1px solid $clr-org;
+            transform: scale(1.05);
+
+        }
+
+    }
 }
 
 /* ====== Side Content END ====== */
+
+
 
 /* ====== Media Query ====== */
 @media (max-width: $desktop) {
