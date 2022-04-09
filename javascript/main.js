@@ -49,7 +49,10 @@ function mainText() {
 
 
 const navTogglerBtn = document.querySelector(".nav-toggler"),
-    side = document.querySelector(".side");
+    allSection = document.querySelectorAll(".section"),
+    mainSection = document.querySelectorAll(".main"),
+    totalSection = allSection.length;
+side = document.querySelector(".side");
 navTogglerBtn.addEventListener("click", () => {
     sideSectionTogglerBtn();
 });
@@ -57,9 +60,12 @@ navTogglerBtn.addEventListener("click", () => {
 function sideSectionTogglerBtn() {
     side.classList.toggle("open");
     navTogglerBtn.classList.toggle("open");
+    for (let i = 0; i < totalSection; i++) {
+        allSection[i].classList.toggle("open");
+    }
 }
 
-/* ============================== Nav-links onScroll to active ============================= */
+/* ===================== Nav-links onScroll to active ===================== */
 
 
 var sections = document.querySelectorAll("section");
@@ -101,10 +107,6 @@ navLinks.forEach((link) => {
         var currentId = e.target.attributes.href.value;
         var section = document.querySelector(currentId);
         var sectionPos = section.offsetTop;
-        // section.scrollIntoView({
-        //   behavior: "smooth",
-        // });
-
         window.scroll({
             top: sectionPos,
             behavior: "smooth",
