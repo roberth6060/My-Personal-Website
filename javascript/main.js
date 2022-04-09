@@ -30,7 +30,7 @@ if (freelanceStatus == "Available") {
 
 function mainText() {
     var typed = new Typed('#typing1', {
-        strings: ["", "Web Designer", "Web Developer", "Gamer"],
+        strings: ["", "web designer", "web developer", "software developer", "avid gamer"],
         typeSpeed: 100,
         backSpeed: 60,
         startDelay: 0,

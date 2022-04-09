@@ -35,6 +35,11 @@ html {
   display: none !important;
 }
 
+a {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 /* === Website layout structure ===  */
 body {
   font-size: 16px;
@@ -90,7 +95,7 @@ body .main-container .section:nth-of-type(3) {
 }
 
 body .main-container .section .container {
-  max-width: 70%;
+  max-width: 60%;
   margin: auto;
   width: 100%;
 }
@@ -152,12 +157,12 @@ body .main-container .section .container .row .section-title h2::after {
 
 /* ====== Home Section END ====== */
 .home {
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,21 +277,58 @@ body .main-container .section .container .row .section-title h2::after {
   transform: translateY(0) rotateX(0);
 }
 
+.home .home-info .contact-icon {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 40px;
+  left: -5%;
+  bottom: 0;
+}
+
+.home .home-info .contact-icon .contact-info-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  max-width: 25%;
+}
+
+.home .home-info .contact-icon .contact-info-item .icon {
+  padding: 0 18px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  width: 22px;
+}
+
+.home .home-info .contact-icon .contact-info-item .icon i {
+  font-size: 23px;
+  color: #22170F;
+}
+
+.home .home-info .contact-icon .contact-info-item .icon .github {
+  color: #ff3333 !important;
+}
+
 .home .home-img {
   min-height: 100vh;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 55%;
           flex: 1 1 55%;
-  width: 55%;
+  width: 100%;
   height: auto;
   position: relative;
-}
-
-.home .home-img img {
-  position: absolute;
-  max-width: 100%;
-  height: auto;
-  bottom: 0 !important;
+  background-image: url("../Images/ProfilePicture.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
 }
 
 /* ====== Home Section END ====== */
@@ -301,14 +343,13 @@ body .main-container .section .container .row .section-title h2::after {
   padding-top: 60px;
   padding-bottom: 70px;
   width: 100%;
-  padding-bottom: 40px;
 }
 
 .service .service-item {
   margin-bottom: 30px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.33%;
-          flex: 0 0 33.33%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.33%;
+          flex: 1 1 33.33%;
   max-width: 33.33%;
 }
 
@@ -331,6 +372,9 @@ body .main-container .section .container .row .section-title h2::after {
   text-align: center;
   -webkit-transition: all 0.35 ease;
   transition: all 0.35 ease;
+  height: auto;
+  min-height: 300px;
+  max-height: 300px;
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.07);
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -654,39 +698,6 @@ body .main-container .section .container .row .section-title h2::after {
   text-align: center;
   font-size: 25px;
   margin-bottom: 60px;
-}
-
-.contact .contact-info-item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
-  max-width: 25%;
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.contact .contact-info-item .icon {
-  display: inline-block;
-}
-
-.contact .contact-info-item .icon .fa {
-  font-size: 25px;
-  color: #ff3333;
-}
-
-.contact .contact-info-item h4 {
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--text-black-900);
-  text-transform: capitalize;
-  margin: 15px 0 5px;
-}
-
-.contact .contact-info-item p {
-  font-size: 16px;
-  line-height: 25px;
-  color: var(--text-black-700);
-  font-weight: 400;
 }
 
 .contact .contact-form {

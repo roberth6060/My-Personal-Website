@@ -54,6 +54,10 @@ html {
     display: none !important;
 }
 
+a {
+    transform: scale(1.05);
+}
+
 
 /* === Website layout structure ===  */
 
@@ -113,7 +117,7 @@ body {
             }
 
             .container {
-                max-width: 70%;
+                max-width: 60%;
                 margin: auto;
                 width: 100%;
 
@@ -167,15 +171,14 @@ body {
 }
 
 
-
-
 /* ====== Home Section END ====== */
 .home {
-    align-items: center !important;
-    justify-content: center !important;
+    align-items: center;
+    justify-content: center;
     display: flex;
     color: $txt-blk-900;
     min-height: 100vh;
+
 
     .home-info {
         flex: 1 1 45%;
@@ -282,24 +285,59 @@ body {
             -webkit-transform: translateY(0) rotateX(0);
             transform: translateY(0) rotateX(0);
         }
+
+        .contact-icon {
+            position: absolute;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-bottom: 40px;
+            left: -5%;
+            bottom: 0;
+
+            .contact-info-item {
+                flex: 1 1 25%;
+                max-width: 25%;
+
+                .icon {
+                    padding: 0 18px;
+                    flex: 1 1 25%;
+                    width: 22px;
+
+                    i {
+                        font-size: 23px;
+                        color: $txt-blk-choco;
+                    }
+
+                    .github {
+                        color: $clr-org !important;
+                    }
+                }
+
+            }
+        }
     }
 
     .home-img {
         min-height: 100vh;
         flex: 1 1 55%;
-        width: 55%;
+        width: 100%;
         height: auto;
         position: relative;
+        background-image: url("../Images/ProfilePicture.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
 
+        // img {
+        //     position: absolute;
+        //     max-width: 50rem;
+        //     height: auto;
+        //     bottom: 0 !important;
 
-        img {
-            position: absolute;
-            max-width: 100%;
-            height: auto;
-            bottom: 0 !important;
-
-        }
+        // }
     }
+
 
 }
 
@@ -317,13 +355,14 @@ body {
         padding-top: 60px;
         padding-bottom: 70px;
         width: 100%;
-        padding-bottom: 40px;
+
     }
 
     .service-item {
         margin-bottom: 30px;
-        flex: 0 0 33.33%;
+        flex: 1 1 33.33%;
         max-width: 33.33%;
+
 
         h4 {
             font-size: 20px;
@@ -343,6 +382,9 @@ body {
             padding: 30px 15px;
             text-align: center;
             transition: all 0.35 ease;
+            height: auto;
+            min-height: 300px;
+            max-height: 300px;
 
             /* From https://css.glass */
             background: rgba(255, 255, 255, 0.07);
@@ -670,37 +712,6 @@ body {
         text-align: center;
         font-size: 25px;
         margin-bottom: 60px;
-    }
-
-    .contact-info-item {
-        flex: 0 0 25%;
-        max-width: 25%;
-        text-align: center;
-        margin-bottom: 60px;
-
-        .icon {
-            display: inline-block;
-
-            .fa {
-                font-size: 25px;
-                color: $clr-org;
-            }
-        }
-
-        h4 {
-            font-size: 18px;
-            font-weight: 500;
-            color: var(--text-black-900);
-            text-transform: capitalize;
-            margin: 15px 0 5px;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 25px;
-            color: var(--text-black-700);
-            font-weight: 400;
-        }
     }
 
     .contact-form {
