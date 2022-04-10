@@ -22,7 +22,7 @@ $desktop: 1200px;
 
 html {
     scroll-behavior: smooth;
-    overflow-y: overlay;
+
 }
 
 * {
@@ -35,6 +35,14 @@ html {
 
 }
 
+::-webkit-scrollbar {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 10px;
+}
 
 ::before,
 ::after {
@@ -63,12 +71,13 @@ a {
 /* === Website layout structure ===  */
 
 body {
+
     font-size: 16px;
     line-height: 1.5;
     outline: none;
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
+    overflow: overlay;
 
 
     .main-container {
@@ -87,7 +96,7 @@ body {
             top: 0;
             width: 100%;
             z-index: 0;
-            
+
 
 
             &:nth-of-type(1) {
@@ -118,7 +127,7 @@ body {
             }
 
             .container {
-               max-width: 1100px;
+                max-width: 1400px;
                 margin: auto;
                 width: 100%;
 
@@ -847,6 +856,7 @@ body {
             left: 0;
         }
     }
+
     .nav-toggler.open {
         right: 220px;
     }
@@ -1000,7 +1010,7 @@ body {
                     // width: 500px;
                     // width: 100%;
                     // background-size: contain;
-                    
+
                 }
 
                 .contact-icon {
