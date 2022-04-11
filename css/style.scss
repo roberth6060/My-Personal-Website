@@ -192,8 +192,6 @@ body {
     justify-content: center;
     display: flex;
     color: $txt-blk-900;
-    min-height: 100vh;
-
 
     .home-info {
         flex: 1 1 45%;
@@ -307,7 +305,7 @@ body {
             flex-wrap: wrap;
             flex-direction: row;
             margin-bottom: 40px;
-            left: -5%;
+            left: -2%;
             bottom: 0;
 
             .contact-info-item {
@@ -397,8 +395,8 @@ body {
             text-align: center;
             transition: all 0.35 ease;
             height: auto;
-            min-height: 300px;
-            max-height: 300px;
+            min-height: 330px;
+            max-height: 330px;
 
             /* From https://css.glass */
             background: rgba(255, 255, 255, 0.07);
@@ -981,64 +979,38 @@ body {
 
 @media (max-width: $desktop) {
 
-    .home {
-        .container {
-            // max-width: 1100px;
-            margin: auto;
-            // width: 100%;
-            // height: auto;
 
-            .row {
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column-reverse;
-                // height: auto;
+    .home-img {
+        position: relative;
+    }
 
-                .home-info {
-                    // flex: 1 1 100%;
-                    max-width: 100%;
-                    // margin-bottom: 400px;
-                    background-position: center center;
+    .contact-icon {
+        position: relative;
+        margin-top: 40px;
+    }
 
-                }
+    .service-item-inner {
+        min-height: 340px !important;
+        max-height: 350px;
+    }
 
-                .home-img {
-                    position: relative;
-                    // height: 400px;
-                    // top: -400px;
-                    // padding-bottom: 0;
-                    // width: 500px;
-                    // width: 100%;
-                    // background-size: contain;
 
-                }
 
-                .contact-icon {
-                    position: relative;
-                    margin-top: 40px;
-                    width: 25%;
-                    // left: 0;
-                    // bottom: -60px;
-                }
+        .section {
+            width: 100%;
+            right: 0 !important;
 
-            }
         }
-    }
 
-    .section {
-        width: 100%;
-        right: 0 !important;
-
-    }
-
-    .about {
-        .about-content {
-            .personal-info {
-                .info-item {
-                    p {
-                        span {
-                            display: block;
-                            margin-left: 0;
+        .about {
+            .about-content {
+                .personal-info {
+                    .info-item {
+                        p {
+                            span {
+                                display: block;
+                                margin-left: 0;
+                            }
                         }
                     }
                 }
@@ -1063,71 +1035,76 @@ body {
 
         right: -270px;
     }
-}
 
-@media (max-width: $laptop) {
 
-    .my-work {
-        .my-work-item {
-            flex: 1 1 50%;
-            max-width: 50%;
+    @media (max-width: $laptop) {
+
+        .my-work {
+            .my-work-item {
+                flex: 1 1 50%;
+                max-width: 50%;
+            }
+        }
+
+        .contact {
+            .contact-info-item {
+                flex: 1 1 50%;
+                max-width: 50%;
+            }
+        }
+
+        .service {
+            .service-item {
+                flex: 1 1 50%;
+                max-width: 50%;
+            }
+        }
+
+        .home {
+            .container {
+                .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column-reverse !important;
+
+                    .home-info {
+                        flex: 1 1 100%;
+                        max-width: 100%;
+
+                    }
+
+                    .home-img {
+
+                        padding-bottom: 60px;
+                    }
+                }
+            }
         }
     }
 
-    .contact {
-        .contact-info-item {
-            flex: 1 1 50%;
-            max-width: 50%;
-        }
-    }
-
-    .service {
-        .service-item {
-            flex: 1 1 50%;
-            max-width: 50%;
-        }
-    }
-
-    .home {
-        .container {
-            .row {
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column-reverse !important;
-
-                .home-info {
+    @media (max-width: $tablet) {
+        .contact {
+            .contact-form {
+                .col-6 {
                     flex: 1 1 100%;
                     max-width: 100%;
-
-                }
-
-                .home-img {
-
-                    padding-bottom: 60px;
                 }
             }
         }
-    }
-}
 
-@media (max-width: $tablet) {
-    .contact {
-        .contact-form {
-            .col-6 {
-                flex: 1 1 100%;
-                max-width: 100%;
+        .about {
+            .about-content {
+                .personal-info {
+                    flex: 1 1 100%;
+                    max-width: 100%;
+                }
             }
         }
-    }
 
-    .about {
-        .about-content {
-            .personal-info {
-                flex: 1 1 100%;
-                max-width: 100%;
-            }
-        }
-    }
+    //      .service-item-inner {
+    //     min-height: 300px !important;
+    //     max-height: 300px;
+    // }
 
-    @media (max-width: $tablet) {}
-}
+        @media (max-width: $tablet) {}
+    }

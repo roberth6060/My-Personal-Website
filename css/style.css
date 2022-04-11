@@ -179,7 +179,6 @@ body .main-container .section.open {
   display: -ms-flexbox;
   display: flex;
   color: #302e4d;
-  min-height: 100vh;
 }
 
 .home .home-info {
@@ -301,7 +300,7 @@ body .main-container .section.open {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 40px;
-  left: -5%;
+  left: -2%;
   bottom: 0;
 }
 
@@ -384,8 +383,8 @@ body .main-container .section.open {
   -webkit-transition: all 0.35 ease;
   transition: all 0.35 ease;
   height: auto;
-  min-height: 300px;
-  max-height: 300px;
+  min-height: 330px;
+  max-height: 330px;
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.07);
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -965,31 +964,16 @@ body .main-container .section.open {
 /* ====== Side Content END ====== */
 /* ====== Media Query ====== */
 @media (max-width: 1200px) {
-  .home .container {
-    margin: auto;
-  }
-  .home .container .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .home .container .row .home-info {
-    max-width: 100%;
-    background-position: center center;
-  }
-  .home .container .row .home-img {
+  .home-img {
     position: relative;
   }
-  .home .container .row .contact-icon {
+  .contact-icon {
     position: relative;
     margin-top: 40px;
-    width: 25%;
+  }
+  .service-item-inner {
+    min-height: 340px !important;
+    max-height: 350px;
   }
   .section {
     width: 100%;
@@ -999,21 +983,25 @@ body .main-container .section.open {
     display: block;
     margin-left: 0;
   }
-  .side.open {
-    right: 0;
-  }
-  .side .nav-toggler.open {
-    right: 220px;
-  }
-  .side {
-    right: -270px;
-  }
-  .side .nav-toggler {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    right: 30px;
-  }
+}
+
+.side.open {
+  right: 0;
+}
+
+.side .nav-toggler.open {
+  right: 220px;
+}
+
+.side {
+  right: -270px;
+}
+
+.side .nav-toggler {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  right: 30px;
 }
 
 @media (max-width: 992px) {
