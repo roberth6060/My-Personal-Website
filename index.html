@@ -62,7 +62,7 @@
                                 <!-- ==== Contact Info  STARTS ===== -->
                                 <div class="contact-info-item">
                                     <div class="icon">
-                                        <a href="mailto:haye.robert@yahoo.com"><i class="fa fa-envelope"></i></a>
+                                        <a href="#contact"><i class="fa fa-envelope"></i></a>
 
                                     </div>
                                 </div>
@@ -70,7 +70,6 @@
                             </div>
                         </div>
                         <div class="home-img padd-15">
-                            <!-- <img src="./Images/ProfilePicture.png" alt=""> -->
                         </div>
                     </div>
                 </div>
@@ -372,38 +371,41 @@
 
                     <!-- ==== Contact Form STARTS ===== -->
                     <div class="row">
-                        <form action="mailto:haye.robert@yahoo.com" method="post" enctype="text/plain"
-                            class="contact-form padd-15">
+                        <form class="contact-form padd-15">
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="Name" placeholder="Name">
+                                        <input id="cname" required="" name="name" type="text" class="form-control"
+                                            placeholder="Name">
                                     </div>
                                 </div>
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" name="Email" placeholder="Email">
+                                        <input id="cemail" required="" name="email" type="text" class="form-control"
+                                            placeholder="Email">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <input type="text" name="subject" class="form-control" placeholder="Subject">
+                                        <input id="csubject" type="text" name="subject" class="form-control"
+                                            placeholder="Subject">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <textarea name="Message" class="form-control" id="form-control"
+                                        <textarea id="cmessage" name="message" required="" class="form-control"
                                             placeholder="Message"></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
-                                    <button type="submit" class="btn btn-danger">Send Message</button>
+                                    <button type="submit" class="btn btn-danger" onclick="sendMail()">Send
+                                        Message</button>
                                 </div>
                             </div>
 
