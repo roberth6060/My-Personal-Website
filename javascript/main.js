@@ -47,24 +47,16 @@ function mainText() {
 }
 /* =================================== Side Section =================================== */
 
-
-const navTogglerBtn = document.querySelector(".nav-toggler"),
-    allSection = document.querySelectorAll(".section"),
-    mainSection = document.querySelectorAll(".main"),
-    totalSection = allSection.length;
-side = document.querySelector(".side");
-navTogglerBtn.addEventListener("click", () => {
-    sideSectionTogglerBtn();
-});
-
-function sideSectionTogglerBtn() {
-    side.classList.toggle("open");
-    navTogglerBtn.classList.toggle("open");
-    for (let i = 0; i < totalSection; i++) {
-        allSection[i].classList.toggle("open");
-    }
+function hideSidebar() {
+    document.getElementById('openSideMenu').checked = false;
 }
 
+var sideIconToggle = document.getElementById('sidebarContainer');
+
+document.addEventListener('click', function (event) {
+    if (!sidebarContainer.contains(event.target))
+        hideSidebar();
+});
 /* ===================== Nav-links onScroll to active ===================== */
 
 
