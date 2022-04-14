@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Lobster&family=Pacifico&family=Passion+One&family=Poppins:ital,wght@1,200&display=swap");
 /* Colors*/
 /* Media Query Breakpoints*/
@@ -45,8 +46,8 @@ html {
 }
 
 a {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.05) !important;
+          transform: scale(1.05) !important;
 }
 
 /* === Website layout structure ===  */
@@ -295,13 +296,13 @@ body .main-container .section .container .row .section-title h2::after {
   margin-bottom: 40px;
   left: -2%;
   bottom: 0;
+  max-width: 150px;
 }
 
 .home .home-info .contact-icon .contact-info-item {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 25%;
           flex: 1 1 25%;
-  max-width: 25%;
 }
 
 .home .home-info .contact-icon .contact-info-item .icon {
@@ -507,6 +508,18 @@ body .main-container .section .container .row .section-title h2::after {
 
 /* ====== About Section END ====== */
 /* ====== My Work Section END ====== */
+.checkedstatus {
+  display: none;
+}
+
+.ArrowLeft {
+  display: none;
+}
+
+.ArrowRight {
+  display: none;
+}
+
 .my-work {
   background: #414a4c !important;
   /* ===== Animation STARTS =====*/
@@ -1043,6 +1056,19 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
 }
 
 @media (max-width: 992px) {
+  .contact-icon {
+    position: relative !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 0;
+  }
   .my-work .my-work-item {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 50%;
@@ -1095,6 +1121,324 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
     max-width: 100%;
+  }
+  label {
+    cursor: pointer;
+  }
+  /* Container to center */
+  .ContainerCenter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* Slider */
+  .Carrusels {
+    height: 300px;
+    width: 500px;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .Carrusel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+  /* State 1 */
+  #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(1) {
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
+  }
+  #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(2) {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(3) {
+    -webkit-transform: translate(200%, 0);
+            transform: translate(200%, 0);
+  }
+  #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(4) {
+    -webkit-transform: translate(300%, 0);
+            transform: translate(300%, 0);
+  }
+  #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(5) {
+    -webkit-transform: translate(400%, 0);
+            transform: translate(400%, 0);
+  }
+  #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(6) {
+    -webkit-transform: translate(500%, 0);
+            transform: translate(500%, 0);
+  }
+  /* State 2 */
+  #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(1) {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(2) {
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
+  }
+  #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(3) {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(4) {
+    -webkit-transform: translate(200%, 0);
+            transform: translate(200%, 0);
+  }
+  #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(5) {
+    -webkit-transform: translate(300%, 0);
+            transform: translate(300%, 0);
+  }
+  #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(6) {
+    -webkit-transform: translate(400%, 0);
+            transform: translate(400%, 0);
+  }
+  /* State 3 */
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(1) {
+    -webkit-transform: translate(-200%, 0);
+            transform: translate(-200%, 0);
+  }
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(2) {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(3) {
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
+  }
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(4) {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(5) {
+    -webkit-transform: translate(200%, 0);
+            transform: translate(200%, 0);
+  }
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(6) {
+    -webkit-transform: translate(300%, 0);
+            transform: translate(300%, 0);
+  }
+  /* State 4 */
+  #Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(1) {
+    -webkit-transform: translate(-300%, 0);
+            transform: translate(-300%, 0);
+  }
+  #Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(2) {
+    -webkit-transform: translate(-200%, 0);
+            transform: translate(-200%, 0);
+  }
+  #Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(3) {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  #Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(4) {
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
+  }
+  #Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(5) {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  #Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(6) {
+    -webkit-transform: translate(200%, 0);
+            transform: translate(200%, 0);
+  }
+  /* State 5 */
+  #Slider5:checked ~ .Carrusels .Carrusel:nth-of-type(1) {
+    -webkit-transform: translate(-400%, 0);
+            transform: translate(-400%, 0);
+  }
+  #Slider5:checked ~ .Carrusels .Carrusel:nth-of-type(2) {
+    -webkit-transform: translate(-300%, 0);
+            transform: translate(-300%, 0);
+  }
+  #Slider5:checked ~ .Carrusels .Carrusel:nth-of-type(3) {
+    -webkit-transform: translate(-200%, 0);
+            transform: translate(-200%, 0);
+  }
+  #Slider5:checked ~ .Carrusels .Carrusel:nth-of-type(4) {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  #Slider5:checked ~ .Carrusels .Carrusel:nth-of-type(5) {
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
+  }
+  #Slider5:checked ~ .Carrusels .Carrusel:nth-of-type(6) {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  /* State 6 */
+  #Slider6:checked ~ .Carrusels .Carrusel:nth-of-type(1) {
+    -webkit-transform: translate(-500%, 0);
+            transform: translate(-500%, 0);
+  }
+  #Slider6:checked ~ .Carrusels .Carrusel:nth-of-type(2) {
+    -webkit-transform: translate(-400%, 0);
+            transform: translate(-400%, 0);
+  }
+  #Slider6:checked ~ .Carrusels .Carrusel:nth-of-type(3) {
+    -webkit-transform: translate(-300%, 0);
+            transform: translate(-300%, 0);
+  }
+  #Slider6:checked ~ .Carrusels .Carrusel:nth-of-type(4) {
+    -webkit-transform: translate(-200%, 0);
+            transform: translate(-200%, 0);
+  }
+  #Slider6:checked ~ .Carrusels .Carrusel:nth-of-type(5) {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  #Slider6:checked ~ .Carrusels .Carrusel:nth-of-type(6) {
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
+  }
+  /* Flechas */
+  .Carrusels .ArrowLeft,
+  .Carrusels .ArrowRight {
+    position: absolute;
+    height: 100%;
+    width: 2em;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .Carrusels .ArrowLeft {
+    color: #ff3333;
+    left: 0px;
+  }
+  .Carrusels .ArrowRight {
+    color: #ff3333;
+    right: 0px;
+  }
+  /* Configuracion de flechas individuales */
+  #Slider1:checked ~ .Carrusels .Arrow1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #Slider2:checked ~ .Carrusels .Arrow2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #Slider3:checked ~ .Carrusels .Arrow3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #Slider4:checked ~ .Carrusels .Arrow4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #Slider5:checked ~ .Carrusels .Arrow5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #Slider6:checked ~ .Carrusels .Arrow6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  /* Selectores */
+  .Selectors {
+    width: 100%;
+    padding: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    gap: 5px;
+  }
+  .Selectors .Selector {
+    background-color: #FFF;
+    height: 10px;
+    width: 10px;
+    display: block;
+    border-radius: 5px;
+  }
+  /* Condicionales para botón inferior */
+  #Slider1:checked ~ .Selectors .Selector:nth-of-type(1) {
+    background-color: #ff3333;
+  }
+  #Slider2:checked ~ .Selectors .Selector:nth-of-type(2) {
+    background-color: #ff3333;
+  }
+  #Slider3:checked ~ .Selectors .Selector:nth-of-type(3) {
+    background-color: #ff3333;
+  }
+  #Slider4:checked ~ .Selectors .Selector:nth-of-type(4) {
+    background-color: #ff3333;
+  }
+  #Slider5:checked ~ .Selectors .Selector:nth-of-type(5) {
+    background-color: #ff3333;
+  }
+  #Slider6:checked ~ .Selectors .Selector:nth-of-type(6) {
+    background-color: #ff3333;
+  }
+  .my-work figure.my-work-item {
+    margin: 0;
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 768px) {
+  .form-item {
+    margin-bottom: 28px !important;
+  }
+  .contact {
+    height: 100vh !important;
+  }
+  .contact .container {
+    height: 100vh;
+  }
+  .contact .container .test {
+    position: relative;
+    margin: 0;
+  }
+  .section-title h2 {
+    font-size: 30px !important;
+  }
+  .contact {
+    height: 100vh;
+  }
+  .contact-title {
+    color: #ff3333;
+    text-align: center;
+    font-size: 20px !important;
+    margin-bottom: 20px;
+  }
+  .contact-sub-title {
+    color: var(--text-black-900);
+    text-align: center;
+    font-size: 20px !important;
+    margin-bottom: 60px;
   }
 }
 /*# sourceMappingURL=style.css.map */

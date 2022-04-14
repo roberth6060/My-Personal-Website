@@ -64,7 +64,7 @@ html {
 }
 
 a {
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
 }
 
 
@@ -94,8 +94,6 @@ body {
             top: 0;
             width: 100%;
             z-index: 0;
-
-
 
             &:nth-of-type(1) {
                 // Targets homepage section (first child)
@@ -175,11 +173,6 @@ body {
             }
 
         }
-
-        // .section.open {
-        //     right: 270px;
-
-        // }
     }
 }
 
@@ -305,10 +298,10 @@ body {
             margin-bottom: 40px;
             left: -2%;
             bottom: 0;
+            max-width: 150px;
 
             .contact-info-item {
                 flex: 1 1 25%;
-                max-width: 25%;
 
                 .icon {
                     padding: 0 18px;
@@ -512,7 +505,20 @@ body {
 /* ====== About Section END ====== */
 
 /* ====== My Work Section END ====== */
+.checkedstatus {
+    display: none;
+}
+
+.ArrowLeft {
+    display: none;
+}
+
+.ArrowRight {
+    display: none;
+}
+
 .my-work {
+
     background: #414a4c !important;
 
     h2 {
@@ -1053,6 +1059,14 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
 
 @media (max-width: $laptop) {
+    .contact-icon {
+        position: relative !important;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-bottom: 0;
+
+    }
 
     .my-work {
         .my-work-item {
@@ -1098,6 +1112,7 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 }
 
 @media (max-width: $tablet) {
+
     .contact {
         .contact-form {
             .col-6 {
@@ -1116,10 +1131,337 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
         }
     }
 
-    //      .service-item-inner {
-    //     min-height: 300px !important;
-    //     max-height: 300px;
-    // }
 
-    @media (max-width: $tablet) {}
+    label {
+        cursor: pointer;
+    }
+
+    /* Container to center */
+    .ContainerCenter {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Slider */
+    .Carrusels {
+        height: 300px;
+        width: 500px;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .Carrusel {
+         height: 100%;
+        width: 100%;
+        position: absolute;
+        background-size: cover;
+        transition: all .5s ease;
+    }
+
+    
+
+    /* State 1 */
+    #Slider1:checked~.Carrusels .Carrusel:nth-of-type(1) {
+        transform: translate(0%, 0);
+    }
+
+    #Slider1:checked~.Carrusels .Carrusel:nth-of-type(2) {
+        transform: translate(100%, 0);
+    }
+
+    #Slider1:checked~.Carrusels .Carrusel:nth-of-type(3) {
+        transform: translate(200%, 0);
+    }
+
+    #Slider1:checked~.Carrusels .Carrusel:nth-of-type(4) {
+        transform: translate(300%, 0);
+    }
+
+    #Slider1:checked~.Carrusels .Carrusel:nth-of-type(5) {
+        transform: translate(400%, 0);
+    }
+
+    #Slider1:checked~.Carrusels .Carrusel:nth-of-type(6) {
+        transform: translate(500%, 0);
+    }
+
+
+    /* State 2 */
+    #Slider2:checked~.Carrusels .Carrusel:nth-of-type(1) {
+        transform: translate(-100%, 0);
+    }
+
+    #Slider2:checked~.Carrusels .Carrusel:nth-of-type(2) {
+        transform: translate(0%, 0);
+    }
+
+    #Slider2:checked~.Carrusels .Carrusel:nth-of-type(3) {
+        transform: translate(100%, 0);
+    }
+
+    #Slider2:checked~.Carrusels .Carrusel:nth-of-type(4) {
+        transform: translate(200%, 0);
+    }
+
+    #Slider2:checked~.Carrusels .Carrusel:nth-of-type(5) {
+        transform: translate(300%, 0);
+    }
+
+    #Slider2:checked~.Carrusels .Carrusel:nth-of-type(6) {
+        transform: translate(400%, 0);
+    }
+
+
+    /* State 3 */
+    #Slider3:checked~.Carrusels .Carrusel:nth-of-type(1) {
+        transform: translate(-200%, 0);
+    }
+
+    #Slider3:checked~.Carrusels .Carrusel:nth-of-type(2) {
+        transform: translate(-100%, 0);
+    }
+
+    #Slider3:checked~.Carrusels .Carrusel:nth-of-type(3) {
+        transform: translate(0%, 0);
+    }
+
+    #Slider3:checked~.Carrusels .Carrusel:nth-of-type(4) {
+        transform: translate(100%, 0);
+    }
+
+    #Slider3:checked~.Carrusels .Carrusel:nth-of-type(5) {
+        transform: translate(200%, 0);
+    }
+
+    #Slider3:checked~.Carrusels .Carrusel:nth-of-type(6) {
+        transform: translate(300%, 0);
+    }
+
+    /* State 4 */
+    #Slider4:checked~.Carrusels .Carrusel:nth-of-type(1) {
+        transform: translate(-300%, 0);
+    }
+
+    #Slider4:checked~.Carrusels .Carrusel:nth-of-type(2) {
+        transform: translate(-200%, 0);
+    }
+
+    #Slider4:checked~.Carrusels .Carrusel:nth-of-type(3) {
+        transform: translate(-100%, 0);
+    }
+
+    #Slider4:checked~.Carrusels .Carrusel:nth-of-type(4) {
+        transform: translate(0%, 0);
+    }
+
+    #Slider4:checked~.Carrusels .Carrusel:nth-of-type(5) {
+        transform: translate(100%, 0);
+    }
+
+    #Slider4:checked~.Carrusels .Carrusel:nth-of-type(6) {
+        transform: translate(200%, 0);
+    }
+
+    /* State 5 */
+    #Slider5:checked~.Carrusels .Carrusel:nth-of-type(1) {
+        transform: translate(-400%, 0);
+    }
+
+    #Slider5:checked~.Carrusels .Carrusel:nth-of-type(2) {
+        transform: translate(-300%, 0);
+    }
+
+    #Slider5:checked~.Carrusels .Carrusel:nth-of-type(3) {
+        transform: translate(-200%, 0);
+    }
+
+    #Slider5:checked~.Carrusels .Carrusel:nth-of-type(4) {
+        transform: translate(-100%, 0);
+    }
+
+    #Slider5:checked~.Carrusels .Carrusel:nth-of-type(5) {
+        transform: translate(0%, 0);
+    }
+
+    #Slider5:checked~.Carrusels .Carrusel:nth-of-type(6) {
+        transform: translate(100%, 0);
+    }
+
+    /* State 6 */
+    #Slider6:checked~.Carrusels .Carrusel:nth-of-type(1) {
+        transform: translate(-500%, 0);
+    }
+
+    #Slider6:checked~.Carrusels .Carrusel:nth-of-type(2) {
+        transform: translate(-400%, 0);
+    }
+
+    #Slider6:checked~.Carrusels .Carrusel:nth-of-type(3) {
+        transform: translate(-300%, 0);
+    }
+
+    #Slider6:checked~.Carrusels .Carrusel:nth-of-type(4) {
+        transform: translate(-200%, 0);
+    }
+
+    #Slider6:checked~.Carrusels .Carrusel:nth-of-type(5) {
+        transform: translate(-100%, 0);
+    }
+
+    #Slider6:checked~.Carrusels .Carrusel:nth-of-type(6) {
+        transform: translate(0%, 0);
+    }
+
+
+    /* Flechas */
+    .Carrusels .ArrowLeft,
+    .Carrusels .ArrowRight {
+        position: absolute;
+        height: 100%;
+        width: 2em;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        user-select: none;
+    }
+
+    .Carrusels .ArrowLeft {
+        color: $clr-org;
+        left: 0px;
+        // position: fixed;
+    }
+
+    .Carrusels .ArrowRight {
+        color: $clr-org;
+        right: 0px;
+        // position: fixed;
+
+    }
+
+    /* Configuracion de flechas individuales */
+    #Slider1:checked~.Carrusels .Arrow1 {
+        display: flex;
+    }
+
+    #Slider2:checked~.Carrusels .Arrow2 {
+        display: flex;
+    }
+
+    #Slider3:checked~.Carrusels .Arrow3 {
+        display: flex;
+    }
+
+    #Slider4:checked~.Carrusels .Arrow4 {
+        display: flex;
+    }
+
+    #Slider5:checked~.Carrusels .Arrow5 {
+        display: flex;
+    }
+
+    #Slider6:checked~.Carrusels .Arrow6 {
+        display: flex;
+    }
+
+
+    /* Selectores */
+    .Selectors {
+        width: 100%;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .Selectors .Selector {
+        background-color: #FFF;
+        height: 10px;
+        width: 10px;
+        display: block;
+        border-radius: 5px;
+    }
+
+    /* Condicionales para botón inferior */
+    #Slider1:checked~.Selectors .Selector:nth-of-type(1) {
+        background-color: $clr-org;
+    }
+
+    #Slider2:checked~.Selectors .Selector:nth-of-type(2) {
+        background-color: $clr-org;
+    }
+
+    #Slider3:checked~.Selectors .Selector:nth-of-type(3) {
+        background-color: $clr-org;
+    }
+
+    #Slider4:checked~.Selectors .Selector:nth-of-type(4) {
+        background-color: $clr-org;
+    }
+
+    #Slider5:checked~.Selectors .Selector:nth-of-type(5) {
+        background-color: $clr-org;
+    }
+
+    #Slider6:checked~.Selectors .Selector:nth-of-type(6) {
+        background-color: $clr-org;
+    }
+
+
+    .my-work {
+        figure.my-work-item {
+            margin: 0;
+            min-width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: $tablet) {
+      
+        .form-item {
+            margin-bottom: 28px !important;
+        }
+
+        .contact {
+
+            height: 100vh !important;
+
+            .container {
+                height: 100vh;
+
+                .test {
+                    position: relative;
+                    margin: 0;
+                }
+            }
+        }
+
+        .section-title {
+            h2 {
+                font-size: 30px !important;
+            }
+        }
+
+        .contact {
+            height: 100vh;
+        }
+
+        .contact-title {
+            color: $clr-org;
+            text-align: center;
+            font-size: 20px !important;
+            margin-bottom: 20px;
+
+        }
+
+        .contact-sub-title {
+            color: var(--text-black-900);
+            text-align: center;
+            font-size: 20px !important;
+            margin-bottom: 60px;
+        }
+    }
 }
