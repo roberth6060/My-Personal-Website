@@ -4,6 +4,7 @@
 /* Media Query Breakpoints*/
 html {
   scroll-behavior: smooth;
+  background: #dde8f0;
 }
 
 * {
@@ -64,7 +65,7 @@ body .main-container {
 }
 
 body .main-container .section {
-  height: 100vh;
+  height: auto;
   min-height: 100vh;
   opacity: 1;
   padding: 0 30px;
@@ -176,7 +177,7 @@ body .main-container .section .container .row .section-title h2::after {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 45%;
           flex: 1 1 45%;
-  max-width: 45%;
+  width: 45%;
   /* === Button Animation === */
 }
 
@@ -323,7 +324,7 @@ body .main-container .section .container .row .section-title h2::after {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 55%;
           flex: 1 1 55%;
-  width: 100%;
+  width: 55%;
   height: 100vh;
   position: relative;
   background-image: url("../Images/ProfilePicture.png");
@@ -1020,32 +1021,49 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
 /* ====== Side Content END ====== */
 /* ====== Media Query ====== */
 @media (max-width: 1200px) {
+  .contact-icon {
+    position: relative !important;
+    margin-bottom: 300px;
+  }
   .home {
-    background: red;
+    background: lightsalmon;
   }
   .home .container {
-    height: 100vh;
+    max-width: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
   .home .container .row {
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
-    height: 100%;
-    bottom: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
   }
   .home .container .row .home-info {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 45%;
-            flex: 1 1 45%;
-    max-width: 45%;
-    margin: 0;
-    padding: 0;
-    height: auto;
-    max-width: 100%;
+        -ms-flex: 1 1 40vw;
+            flex: 1 1 40vw;
+    height: 40%;
   }
   .home .container .row .home-info .hello {
     padding-top: 120px;
+  }
+  .home .container .row .home-img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 60vw;
+            flex: 1 1 60vw;
+    position: relative;
+    height: 60%;
+    padding-top: 500px;
   }
   .contact-icon {
     position: relative;
@@ -1059,15 +1077,12 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
     display: block;
     margin-left: 0;
   }
+  .section {
+    height: auto !important;
+  }
 }
 
 @media (max-width: 992px) {
-  .home {
-    background: yellow;
-  }
-  .home-img {
-    display: none !important;
-  }
   .section {
     height: auto !important;
   }
@@ -1098,9 +1113,6 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
 @media (max-width: 768px) {
   .home {
     background: blueviolet;
-  }
-  .home-img {
-    display: none !important;
   }
   .contact .contact-form .col-6 {
     -webkit-box-flex: 1;
@@ -1404,14 +1416,11 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
   .home {
     background: pink;
   }
-  .section {
-    height: auto !important;
-  }
-  .row {
-    height: auto;
-  }
-  .home-img {
-    display: none;
+  .about .about-content .personal-info .info-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    max-width: 100%;
   }
   h3 {
     font-size: 25px !important;

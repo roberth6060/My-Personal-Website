@@ -22,7 +22,7 @@ $desktop: 1200px;
 
 html {
     scroll-behavior: smooth;
-    // background: #dde8f0;
+    background: #dde8f0;
 
 }
 
@@ -76,8 +76,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     outline: none;
-    // width: 100vw;
-    // height: 100vh;
     overflow: overlay;
 
 
@@ -86,8 +84,7 @@ body {
         height: 100%;
 
         .section {
-            // background: #dde8f0;
-            height: 100vh;
+            height: auto;
             min-height: 100vh;
             opacity: 1;
             padding: 0 30px;
@@ -187,7 +184,7 @@ body {
 
     .home-info {
         flex: 1 1 45%;
-        max-width: 45%;
+        width: 45%;
 
         h3 {
             color: $txt-blk-choco;
@@ -325,7 +322,7 @@ body {
 
     .home-img {
         flex: 1 1 55%;
-        width: 100%;
+        width: 55%;
         height: 100vh;
         position: relative;
         background-image: url("../Images/ProfilePicture.png");
@@ -1008,40 +1005,62 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 /* ====== Media Query ====== */
 
 @media (max-width: $desktop) {
+    .contact-icon {
+        position: relative !important;
+        margin-bottom: 300px;
+
+    }
+
     .home {
-        background: red;
+        background: lightsalmon;
 
         .container {
-            height: 100vh;
+            // height: 100vh;
 
+            max-width: 600px;
+            padding-left: 20px;
+            padding-right: 20px;
+            flex-shrink: 0;
+
+            flex-grow: 1;
 
             .row {
-                flex-direction: column !important;
-                height: 100%;
-                bottom: 0 !important;
+                display: flex;
+                flex-direction: column;
+
+                // flex-direction: column !important;
+                height: 100vh;
+                // flex-wrap: wrap;
+                // width: 100% !important;
 
                 .home-info {
-                    flex: 1 1 45%;
-                    max-width: 45%;
-                    margin: 0;
-                    padding: 0;
-                    height: auto;
-                    max-width: 100%;
+
+
+                    flex: 1 1 40vw;
+                    // width: 45%;
+                    // max-width: 100%;
+                    // margin: 0;
+                    // padding: 0;
+                    height: 40%;
+                    // max-width: 100%;
 
                     .hello {
                         padding-top: 120px;
                     }
 
+
                 }
 
                 .home-img {
+                    flex: 1 1 60vw;
+                    // flex: 1 1 40%;
                     // display: none !important;
                     // flex: 1 1 55%;
                     // width: 100%;
                     // max-width: 100%;
-                    // position: absolute;
-                    // height: auto;
-
+                    position: relative;
+                    height: 60%;
+                    padding-top: 500px;
                     // bottom: 0;
                     // background-image: url("../Images/ProfilePicture.png");
                     // background-repeat: no-repeat;
@@ -1077,34 +1096,70 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
         }
     }
 
+    .section {
+        height: auto !important;
+    }
+
 }
 
 
 
-@media (max-width: $laptop) {
-    .home {
-        background: yellow;
-        .container {
-            .row {
-                
-            }
-        }
-    }
 
-    .home-img {
-        display: none !important;
-    }
+@media (max-width: $laptop) {
+    // .home {
+    //     background: yellow;
+    //     height: auto;
+
+    //     .container {
+    //         height: 100vh;
+
+    //         .row {
+    //             flex-direction: column !important;
+    //             bottom: 0 !important;
+    //             position: relative;
+    //             width: 100%;
+    //             // overflow: hidden;
+
+    //             .home-info {
+
+    //                 flex: 1 1 100%;
+    //                 width: 45%;
+    //                 margin: 0;
+    //                 padding: 0;
+    //                 height: auto;
+    //                 // max-width: 100%;
+
+    //                 .hello {
+    //                     padding-top: 120px;
+    //                 }
+
+    //             }
+
+    //             .home-img {
+    //                 flex: 1 1 100%;
+    //                 // width: 100%;
+    //                 // max-width: 100%;
+    //                 // position: absolute;
+    //                 height: auto;
+
+    //                 // bottom: 0;
+    //                 // background-image: url("../Images/ProfilePicture.png");
+    //                 // background-repeat: no-repeat;
+    //                 // background-size: contain;
+    //                 // background-position: bottom center;
+    //             }
+    //         }
+    //     }
+    // }
 
     .section {
         height: auto !important;
+
     }
 
 
     .contact-icon {
         position: relative !important;
-        // display: flex;
-        // flex-wrap: nowrap;
-        // flex-direction: row;
         margin-bottom: 300px;
 
     }
@@ -1134,16 +1189,15 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 }
 
 
-
 @media (max-width: $tablet) {
 
     .home {
         background: blueviolet;
     }
 
-    .home-img {
-        display: none !important;
-    }
+    // .home-img {
+    //     display: none !important;
+    // }
 
     .contact {
         .contact-form {
@@ -1456,16 +1510,15 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
         background: pink;
     }
 
-    .section {
-        height: auto !important;
-    }
-
-    .row {
-        height: auto;
-    }
-
-    .home-img {
-        display: none;
+    .about {
+        .about-content {
+            .personal-info {     
+                .info-item {
+                    flex: 1 1 100%;
+                    max-width: 100%;
+                }
+            }
+        }
     }
 
     h3 {
