@@ -22,7 +22,7 @@ $desktop: 1200px;
 
 html {
     scroll-behavior: smooth;
-   background: #dde8f0;
+    background: #dde8f0;
 
 }
 
@@ -1009,6 +1009,9 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
 @media (max-width: $desktop) {
 
+    input[type="checkbox"]:checked~#side {
+        transform: translateX(-270px);
+    }
 
     .home-img {
         position: relative;
@@ -1060,6 +1063,11 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
 
 @media (max-width: $laptop) {
+
+    .section {
+        height: auto !important;
+    }
+
     .contact-icon {
         position: relative !important;
         display: flex;
@@ -1092,27 +1100,49 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
     .home {
         .container {
+            height: 100vh;
+
+
             .row {
-                display: flex;
-                flex-wrap: wrap;
-                flex-direction: column-reverse !important;
+                flex-direction: column !important;
+                height: 100%;
+                bottom: 0 !important;
 
                 .home-info {
-                    flex: 1 1 100%;
+                    flex: 1 1 45%;
+                    max-width: 45%;
+                    margin: 0;
+                    padding: 0;
+                    height: auto;
                     max-width: 100%;
+                    .hello {
+                        padding-top: 120px;
+                    }
 
                 }
 
                 .home-img {
+                    flex: 1 1 55%;
+                    width: 100%;
+                    max-width: 100%;
+                    // position: absolute;
+                    height: auto;
 
-                    padding-bottom: 60px;
+                    bottom: 0;
+                    background-image: url("../Images/ProfilePicture.png");
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: bottom center;
                 }
             }
         }
     }
 }
 
+
+
 @media (max-width: $tablet) {
+
 
     .contact {
         .contact-form {
@@ -1421,13 +1451,9 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
     }
 }
 
-@media (max-width: $tablet) {
+@media (max-width: $mobile) {
     .section {
         height: auto !important;
-    }
-
-    .home-img {
-        display: none;
     }
 
     h3 {
