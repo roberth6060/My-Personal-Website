@@ -22,7 +22,7 @@ $desktop: 1200px;
 
 html {
     scroll-behavior: smooth;
-    background: #dde8f0;
+    // background: #dde8f0;
 
 }
 
@@ -76,8 +76,8 @@ body {
     font-size: 16px;
     line-height: 1.5;
     outline: none;
-    width: 100vw;
-    height: 100vh;
+    // width: 100vw;
+    // height: 100vh;
     overflow: overlay;
 
 
@@ -86,7 +86,7 @@ body {
         height: 100%;
 
         .section {
-            background: #dde8f0;
+            // background: #dde8f0;
             height: 100vh;
             min-height: 100vh;
             opacity: 1;
@@ -1008,13 +1008,46 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 /* ====== Media Query ====== */
 
 @media (max-width: $desktop) {
+    .home {
+        .container {
+            height: 100vh;
 
-    input[type="checkbox"]:checked~#side {
-        transform: translateX(-270px);
-    }
 
-    .home-img {
-        position: relative;
+            .row {
+                flex-direction: column !important;
+                height: 100%;
+                bottom: 0 !important;
+
+                .home-info {
+                    flex: 1 1 45%;
+                    max-width: 45%;
+                    margin: 0;
+                    padding: 0;
+                    height: auto;
+                    max-width: 100%;
+
+                    .hello {
+                        padding-top: 120px;
+                    }
+
+                }
+
+                .home-img {
+                    // display: none !important;
+                    // flex: 1 1 55%;
+                    // width: 100%;
+                    // max-width: 100%;
+                    // position: absolute;
+                    // height: auto;
+
+                    // bottom: 0;
+                    // background-image: url("../Images/ProfilePicture.png");
+                    // background-repeat: no-repeat;
+                    // background-size: contain;
+                    // background-position: bottom center;
+                }
+            }
+        }
     }
 
     .contact-icon {
@@ -1026,15 +1059,6 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
         min-height: 340px !important;
         max-height: 350px;
     }
-
-
-
-    .section {
-        width: 100%;
-        right: 0 !important;
-
-    }
-
     .about {
         .about-content {
             .personal-info {
@@ -1050,14 +1074,6 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
         }
     }
 
-    .side {
-        .nav-toggler {
-            display: flex !important;
-            right: 30px;
-        }
-
-        right: -270px;
-    }
 }
 
 
@@ -1098,46 +1114,7 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
         }
     }
 
-    .home {
-        .container {
-            height: 100vh;
-
-
-            .row {
-                flex-direction: column !important;
-                height: 100%;
-                bottom: 0 !important;
-
-                .home-info {
-                    flex: 1 1 45%;
-                    max-width: 45%;
-                    margin: 0;
-                    padding: 0;
-                    height: auto;
-                    max-width: 100%;
-
-                    .hello {
-                        padding-top: 120px;
-                    }
-
-                }
-
-                .home-img {
-                    flex: 1 1 55%;
-                    width: 100%;
-                    max-width: 100%;
-                    // position: absolute;
-                    height: auto;
-
-                    bottom: 0;
-                    background-image: url("../Images/ProfilePicture.png");
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    background-position: bottom center;
-                }
-            }
-        }
-    }
+    
 }
 
 
