@@ -22,6 +22,7 @@ $desktop: 1200px;
 
 html {
     scroll-behavior: smooth;
+   background: #dde8f0;
 
 }
 
@@ -800,7 +801,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1;
-    transform: translate(0);
+    transform: translate(270px);
     transition: transform 250ms ease-in-out;
     position: fixed;
     opacity: 1;
@@ -909,7 +910,7 @@ body {
 }
 
 input[type="checkbox"]:checked~#side {
-    transform: translateX(-270px);
+    transform: translateX(0);
 }
 
 input[type=checkbox] {
@@ -969,7 +970,6 @@ input[type=checkbox] {
     }
 
 }
-
 
 
 input[type=checkbox]:checked~.sideIconToggle>.horizontal {

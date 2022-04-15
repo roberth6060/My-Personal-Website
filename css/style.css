@@ -4,6 +4,7 @@
 /* Media Query Breakpoints*/
 html {
   scroll-behavior: smooth;
+  background: #dde8f0;
 }
 
 * {
@@ -806,8 +807,8 @@ body .main-container .section .container .row .section-title h2::after {
       -ms-flex-align: center;
           align-items: center;
   z-index: 1;
-  -webkit-transform: translate(0);
-          transform: translate(0);
+  -webkit-transform: translate(270px);
+          transform: translate(270px);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
@@ -909,8 +910,8 @@ body .main-container .section .container .row .section-title h2::after {
 }
 
 input[type="checkbox"]:checked ~ #side {
-  -webkit-transform: translateX(-270px);
-          transform: translateX(-270px);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 input[type=checkbox] {
