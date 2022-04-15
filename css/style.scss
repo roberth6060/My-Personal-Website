@@ -1082,6 +1082,10 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
 
 @media (max-width: $laptop) {
+    .home-img {
+        height: 400px !important;
+    }
+
     .contact-icon {
         position: relative !important;
         margin-bottom: 300px;
@@ -1115,8 +1119,8 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
 @media (max-width: $tablet) {
 
-    .home {
-        background: blueviolet;
+    .home-img {
+        height: 400px !important;
     }
 
     .contact {
@@ -1432,6 +1436,7 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
         .container {
             .row {
                 height: 100vh !important;
+
                 .home-img {
                     height: 400px !important;
                     bottom: 0 !important;
