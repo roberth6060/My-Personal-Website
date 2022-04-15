@@ -1046,16 +1046,17 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
             }
         }
     }
-}
 
-.side {
-    .nav-toggler {
-        display: flex !important;
-        right: 30px;
+    .side {
+        .nav-toggler {
+            display: flex !important;
+            right: 30px;
+        }
+
+        right: -270px;
     }
-
-    right: -270px;
 }
+
 
 
 @media (max-width: $laptop) {
@@ -1152,14 +1153,14 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
     }
 
     .Carrusel {
-         height: 100%;
+        height: 100%;
         width: 100%;
         position: absolute;
         background-size: cover;
         transition: all .5s ease;
     }
 
-    
+
 
     /* State 1 */
     #Slider1:checked~.Carrusels .Carrusel:nth-of-type(1) {
@@ -1418,50 +1419,83 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
             width: 100%;
         }
     }
+}
 
-    @media (max-width: $tablet) {
-      
-        .form-item {
-            margin-bottom: 28px !important;
+@media (max-width: $tablet) {
+    .section {
+        height: auto !important;
+    }
+
+    .home-img {
+        display: none;
+    }
+
+    h3 {
+        font-size: 25px !important;
+
+    }
+
+    .my-profession {
+        font-size: 23px !important;
+
+        span {
+            font-size: 23px !important;
         }
+    }
 
-        .contact {
+    p {
+        margin-bottom: 20px !important;
+        font-size: 14px;
+        color: $txt-blk-choco;
+    }
 
-            height: 100vh !important;
+    .service-item {
+        flex: 1 1 100% !important;
+        min-width: 100%;
+    }
 
-            .container {
-                height: 100vh;
+    .form-item {
+        margin-bottom: 28px !important;
+    }
 
-                .test {
-                    position: relative;
-                    margin: 0;
-                }
-            }
-        }
+    .contact {
 
-        .section-title {
-            h2 {
-                font-size: 30px !important;
-            }
-        }
+        height: 100vh !important;
 
-        .contact {
+        .container {
             height: 100vh;
-        }
 
-        .contact-title {
-            color: $clr-org;
-            text-align: center;
-            font-size: 20px !important;
-            margin-bottom: 20px;
-
+            .test {
+                position: relative;
+                margin: 0;
+            }
         }
+    }
 
-        .contact-sub-title {
-            color: var(--text-black-900);
-            text-align: center;
-            font-size: 20px !important;
-            margin-bottom: 60px;
+    .section-title {
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 30px !important;
         }
+    }
+
+    .contact {
+        height: 100vh;
+    }
+
+    .contact-title {
+        color: $clr-org;
+        text-align: center;
+        font-size: 20px !important;
+        margin-bottom: 20px;
+
+    }
+
+    .contact-sub-title {
+        color: var(--text-black-900);
+        text-align: center;
+        font-size: 20px !important;
+        margin-bottom: 60px;
     }
 }
