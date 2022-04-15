@@ -1010,6 +1010,7 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 @media (max-width: $desktop) {
     .home {
         background: red;
+
         .container {
             height: 100vh;
 
@@ -1060,6 +1061,7 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
         min-height: 340px !important;
         max-height: 350px;
     }
+
     .about {
         .about-content {
             .personal-info {
@@ -1083,9 +1085,8 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
     .home {
         background: yellow;
     }
-    .section {
-        height: auto !important;
-    }
+
+
 
     .contact-icon {
         position: relative !important;
@@ -1117,15 +1118,20 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
         }
     }
 
-    
+
 }
 
 
 
 @media (max-width: $tablet) {
-      .home {
+    .section {
+        height: auto !important;
+    }
+
+    .home {
         background: blueviolet;
     }
+
     .home-img {
         display: none !important;
     }
@@ -1346,17 +1352,16 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
     .Carrusels .ArrowLeft {
         color: $clr-org;
         left: 0px;
-        // position: fixed;
+
     }
 
     .Carrusels .ArrowRight {
         color: $clr-org;
         right: 0px;
-        // position: fixed;
 
     }
 
-    /* Configuracion de flechas individuales */
+    /* Individual arrow settings */
     #Slider1:checked~.Carrusels .Arrow1 {
         display: flex;
     }
@@ -1438,9 +1443,10 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 }
 
 @media (max-width: $mobile) {
-      .home {
+    .home {
         background: pink;
     }
+
     .section {
         height: auto !important;
     }

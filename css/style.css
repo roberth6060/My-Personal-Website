@@ -1065,9 +1065,6 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
   .home {
     background: yellow;
   }
-  .section {
-    height: auto !important;
-  }
   .contact-icon {
     position: relative !important;
     display: -webkit-box;
@@ -1102,6 +1099,9 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
 }
 
 @media (max-width: 768px) {
+  .section {
+    height: auto !important;
+  }
   .home {
     background: blueviolet;
   }
@@ -1327,7 +1327,7 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
     color: #ff3333;
     right: 0px;
   }
-  /* Configuracion de flechas individuales */
+  /* Individual arrow settings */
   #Slider1:checked ~ .Carrusels .Arrow1 {
     display: -webkit-box;
     display: -ms-flexbox;
