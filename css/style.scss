@@ -1063,7 +1063,7 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
 
 @media (max-width: $laptop) {
-
+    
     .section {
         height: auto !important;
     }
@@ -1115,6 +1115,7 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
                     padding: 0;
                     height: auto;
                     max-width: 100%;
+
                     .hello {
                         padding-top: 120px;
                     }
@@ -1142,7 +1143,9 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
 
 @media (max-width: $tablet) {
-
+    .home-img {
+        display: none !important;
+    }
 
     .contact {
         .contact-form {
@@ -1454,6 +1457,14 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 @media (max-width: $mobile) {
     .section {
         height: auto !important;
+    }
+
+    .row {
+        height: auto;
+    }
+
+    .home-img {
+        display: none;
     }
 
     h3 {

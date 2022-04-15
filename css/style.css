@@ -1133,6 +1133,9 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
 }
 
 @media (max-width: 768px) {
+  .home-img {
+    display: none !important;
+  }
   .contact .contact-form .col-6 {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
@@ -1434,6 +1437,12 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
 @media (max-width: 576px) {
   .section {
     height: auto !important;
+  }
+  .row {
+    height: auto;
+  }
+  .home-img {
+    display: none;
   }
   h3 {
     font-size: 25px !important;
