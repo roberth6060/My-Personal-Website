@@ -1009,6 +1009,7 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
 @media (max-width: $desktop) {
     .home {
+        background: red;
         .container {
             height: 100vh;
 
@@ -1079,7 +1080,9 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
 
 @media (max-width: $laptop) {
-    
+    .home {
+        background: yellow;
+    }
     .section {
         height: auto !important;
     }
@@ -1120,6 +1123,9 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
 
 @media (max-width: $tablet) {
+      .home {
+        background: orangered;
+    }
     .home-img {
         display: none !important;
     }
@@ -1432,6 +1438,9 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 }
 
 @media (max-width: $mobile) {
+      .home {
+        background: pink;
+    }
     .section {
         height: auto !important;
     }
