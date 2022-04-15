@@ -1013,59 +1013,35 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
     .home {
         background: lightsalmon;
+        height: auto !important;
 
         .container {
-            // height: 100vh;
 
-            max-width: 600px;
-            padding-left: 20px;
-            padding-right: 20px;
-            flex-shrink: 0;
-
-            flex-grow: 1;
 
             .row {
                 display: flex;
                 flex-direction: column;
 
                 // flex-direction: column !important;
-                height: 100vh;
+                height: auto;
                 // flex-wrap: wrap;
                 // width: 100% !important;
 
                 .home-info {
 
+                    width: 40%;
+                    max-width: 100%;
+                    margin: 0;
+                    padding: 0;
 
-                    flex: 1 1 40vw;
-                    // width: 45%;
-                    // max-width: 100%;
-                    // margin: 0;
-                    // padding: 0;
-                    height: 40%;
-                    // max-width: 100%;
-
-                    .hello {
-                        padding-top: 120px;
-                    }
+                    max-width: 100%;
 
 
                 }
 
                 .home-img {
-                    flex: 1 1 60vw;
-                    // flex: 1 1 40%;
-                    // display: none !important;
-                    // flex: 1 1 55%;
-                    // width: 100%;
-                    // max-width: 100%;
-                    position: relative;
-                    height: 60%;
-                    padding-top: 500px;
-                    // bottom: 0;
-                    // background-image: url("../Images/ProfilePicture.png");
-                    // background-repeat: no-repeat;
-                    // background-size: contain;
-                    // background-position: bottom center;
+                    flex: 1 1 60%;
+                    height: 700px;
                 }
             }
         }
@@ -1106,58 +1082,6 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
 
 @media (max-width: $laptop) {
-    // .home {
-    //     background: yellow;
-    //     height: auto;
-
-    //     .container {
-    //         height: 100vh;
-
-    //         .row {
-    //             flex-direction: column !important;
-    //             bottom: 0 !important;
-    //             position: relative;
-    //             width: 100%;
-    //             // overflow: hidden;
-
-    //             .home-info {
-
-    //                 flex: 1 1 100%;
-    //                 width: 45%;
-    //                 margin: 0;
-    //                 padding: 0;
-    //                 height: auto;
-    //                 // max-width: 100%;
-
-    //                 .hello {
-    //                     padding-top: 120px;
-    //                 }
-
-    //             }
-
-    //             .home-img {
-    //                 flex: 1 1 100%;
-    //                 // width: 100%;
-    //                 // max-width: 100%;
-    //                 // position: absolute;
-    //                 height: auto;
-
-    //                 // bottom: 0;
-    //                 // background-image: url("../Images/ProfilePicture.png");
-    //                 // background-repeat: no-repeat;
-    //                 // background-size: contain;
-    //                 // background-position: bottom center;
-    //             }
-    //         }
-    //     }
-    // }
-
-    .section {
-        height: auto !important;
-
-    }
-
-
     .contact-icon {
         position: relative !important;
         margin-bottom: 300px;
@@ -1194,10 +1118,6 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
     .home {
         background: blueviolet;
     }
-
-    // .home-img {
-    //     display: none !important;
-    // }
 
     .contact {
         .contact-form {
@@ -1508,11 +1428,21 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 @media (max-width: $mobile) {
     .home {
         background: pink;
+
+        .container {
+            .row {
+                height: 100vh !important;
+                .home-img {
+                    height: 400px !important;
+                    bottom: 0 !important;
+                }
+            }
+        }
     }
 
     .about {
         .about-content {
-            .personal-info {     
+            .personal-info {
                 .info-item {
                     flex: 1 1 100%;
                     max-width: 100%;
@@ -1521,13 +1451,15 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
         }
     }
 
+
+
     h3 {
-        font-size: 25px !important;
+        font-size: 20px !important;
 
     }
 
     .my-profession {
-        font-size: 23px !important;
+        font-size: 18px !important;
 
         span {
             font-size: 23px !important;
@@ -1535,7 +1467,7 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
     }
 
     p {
-        margin-bottom: 20px !important;
+        margin-bottom: 10px !important;
         font-size: 14px;
         color: $txt-blk-choco;
     }
@@ -1564,10 +1496,10 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
     }
 
     .section-title {
-        margin-bottom: 30px;
+        margin-bottom: 28px;
 
         h2 {
-            font-size: 30px !important;
+            font-size: 28px !important;
         }
     }
 
