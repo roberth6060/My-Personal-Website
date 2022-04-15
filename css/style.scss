@@ -1084,16 +1084,28 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 @media (max-width: $laptop) {
     .home {
         background: yellow;
+        .container {
+            .row {
+                
+            }
+        }
     }
 
+    .home-img {
+        display: none !important;
+    }
+
+    .section {
+        height: auto !important;
+    }
 
 
     .contact-icon {
         position: relative !important;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        margin-bottom: 0;
+        // display: flex;
+        // flex-wrap: nowrap;
+        // flex-direction: row;
+        margin-bottom: 300px;
 
     }
 
@@ -1124,9 +1136,6 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
 
 @media (max-width: $tablet) {
-    .section {
-        height: auto !important;
-    }
 
     .home {
         background: blueviolet;
