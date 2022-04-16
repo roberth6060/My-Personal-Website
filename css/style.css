@@ -1158,12 +1158,144 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
     -webkit-transform: translate(100%, 0);
             transform: translate(100%, 0);
   }
+  #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(3) {
+    -webkit-transform: translate(200%, 0);
+            transform: translate(200%, 0);
+  }
+  #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(4) {
+    -webkit-transform: translate(300%, 0);
+            transform: translate(300%, 0);
+  }
+  #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(5) {
+    -webkit-transform: translate(400%, 0);
+            transform: translate(400%, 0);
+  }
+  #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(6) {
+    -webkit-transform: translate(500%, 0);
+            transform: translate(500%, 0);
+  }
   /* State 2 */
   #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(1) {
     -webkit-transform: translate(-100%, 0);
             transform: translate(-100%, 0);
   }
   #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(2) {
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
+  }
+  #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(3) {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(4) {
+    -webkit-transform: translate(200%, 0);
+            transform: translate(200%, 0);
+  }
+  #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(5) {
+    -webkit-transform: translate(300%, 0);
+            transform: translate(300%, 0);
+  }
+  #Slider2:checked ~ .Carrusels .Carrusel:nth-of-type(6) {
+    -webkit-transform: translate(400%, 0);
+            transform: translate(400%, 0);
+  }
+  /* State 3 */
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(1) {
+    -webkit-transform: translate(-200%, 0);
+            transform: translate(-200%, 0);
+  }
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(2) {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(3) {
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
+  }
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(4) {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(5) {
+    -webkit-transform: translate(200%, 0);
+            transform: translate(200%, 0);
+  }
+  #Slider3:checked ~ .Carrusels .Carrusel:nth-of-type(6) {
+    -webkit-transform: translate(300%, 0);
+            transform: translate(300%, 0);
+  }
+  /* State 4 */
+  #Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(1) {
+    -webkit-transform: translate(-300%, 0);
+            transform: translate(-300%, 0);
+  }
+  #Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(2) {
+    -webkit-transform: translate(-200%, 0);
+            transform: translate(-200%, 0);
+  }
+  #Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(3) {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  #Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(4) {
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
+  }
+  #Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(5) {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  #Slider4:checked ~ .Carrusels .Carrusel:nth-of-type(6) {
+    -webkit-transform: translate(200%, 0);
+            transform: translate(200%, 0);
+  }
+  /* State 5 */
+  #Slider5:checked ~ .Carrusels .Carrusel:nth-of-type(1) {
+    -webkit-transform: translate(-400%, 0);
+            transform: translate(-400%, 0);
+  }
+  #Slider5:checked ~ .Carrusels .Carrusel:nth-of-type(2) {
+    -webkit-transform: translate(-300%, 0);
+            transform: translate(-300%, 0);
+  }
+  #Slider5:checked ~ .Carrusels .Carrusel:nth-of-type(3) {
+    -webkit-transform: translate(-200%, 0);
+            transform: translate(-200%, 0);
+  }
+  #Slider5:checked ~ .Carrusels .Carrusel:nth-of-type(4) {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  #Slider5:checked ~ .Carrusels .Carrusel:nth-of-type(5) {
+    -webkit-transform: translate(0%, 0);
+            transform: translate(0%, 0);
+  }
+  #Slider5:checked ~ .Carrusels .Carrusel:nth-of-type(6) {
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  /* State 6 */
+  #Slider6:checked ~ .Carrusels .Carrusel:nth-of-type(1) {
+    -webkit-transform: translate(-500%, 0);
+            transform: translate(-500%, 0);
+  }
+  #Slider6:checked ~ .Carrusels .Carrusel:nth-of-type(2) {
+    -webkit-transform: translate(-400%, 0);
+            transform: translate(-400%, 0);
+  }
+  #Slider6:checked ~ .Carrusels .Carrusel:nth-of-type(3) {
+    -webkit-transform: translate(-300%, 0);
+            transform: translate(-300%, 0);
+  }
+  #Slider6:checked ~ .Carrusels .Carrusel:nth-of-type(4) {
+    -webkit-transform: translate(-200%, 0);
+            transform: translate(-200%, 0);
+  }
+  #Slider6:checked ~ .Carrusels .Carrusel:nth-of-type(5) {
+    -webkit-transform: translate(-100%, 0);
+            transform: translate(-100%, 0);
+  }
+  #Slider6:checked ~ .Carrusels .Carrusel:nth-of-type(6) {
     -webkit-transform: translate(0%, 0);
             transform: translate(0%, 0);
   }
@@ -1200,6 +1332,26 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
     display: flex;
   }
   #Slider2:checked ~ .Carrusels .Arrow2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #Slider3:checked ~ .Carrusels .Arrow3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #Slider4:checked ~ .Carrusels .Arrow4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #Slider5:checked ~ .Carrusels .Arrow5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #Slider6:checked ~ .Carrusels .Arrow6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
