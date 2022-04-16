@@ -363,7 +363,7 @@ body .main-container .section .container .row .section-title h2::after {
 }
 
 .service .service-item p {
-  font-size: 16px;
+  font-size: 90%;
   color: floralwhite;
   line-height: 25PX;
 }
@@ -1026,8 +1026,8 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
     margin-bottom: 300px;
   }
   .home {
-    background: lightsalmon;
     height: auto !important;
+    min-height: auto !important;
   }
   .home .container .row {
     display: -webkit-box;
@@ -1400,15 +1400,12 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
 }
 
 @media (max-width: 576px) {
-  .home {
-    background: pink;
-  }
-  .home .container .row {
-    height: 100vh !important;
+  .padd-15 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
   .home .container .row .home-img {
-    height: 400px !important;
-    bottom: 0 !important;
+    height: 300px !important;
   }
   .about .about-content .personal-info .info-item {
     -webkit-box-flex: 1;
@@ -1435,6 +1432,7 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
         -ms-flex: 1 1 100% !important;
             flex: 1 1 100% !important;
     min-width: 100%;
+    height: auto;
   }
   .form-item {
     margin-bottom: 28px !important;

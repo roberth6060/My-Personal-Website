@@ -365,7 +365,7 @@ body {
         }
 
         p {
-            font-size: 16px;
+            font-size: 90%;
             color: floralwhite;
             line-height: 25PX;
         }
@@ -1012,8 +1012,9 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
     }
 
     .home {
-        background: lightsalmon;
+
         height: auto !important;
+        min-height: auto !important;
 
         .container {
 
@@ -1121,6 +1122,7 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 
     .home-img {
         height: 400px !important;
+
     }
 
     .contact {
@@ -1430,16 +1432,16 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
 }
 
 @media (max-width: $mobile) {
-    .home {
-        background: pink;
+    .padd-15 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 
+    .home {
         .container {
             .row {
-                height: 100vh !important;
-
                 .home-img {
-                    height: 400px !important;
-                    bottom: 0 !important;
+                    height: 300px !important;
                 }
             }
         }
@@ -1480,6 +1482,7 @@ input[type=checkbox]:checked~.sideIconToggle>.diagonal.part-2 {
     .service-item {
         flex: 1 1 100% !important;
         min-width: 100%;
+        height: auto;
     }
 
     .form-item {
