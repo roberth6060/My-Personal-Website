@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robert's Portfolio Website</title>
     <!-- Linked favicon image -->
-    <link rel="icon" href="Images/favicon.ico">
+    <link rel="icon" href="/src/img/favicon.ico">
     <!-- Linked css stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/src/sass/style.css">
     <!-- Linked font-awesome CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -28,7 +28,7 @@
                             <h3 class="my-profession"> I am a <span id="typing1"></span></h3>
                             <p>I am a proficient full-stack developer with experience in web design/
                                 development, aswell as knowledge in numerous tools, technologies, and more...</p>
-                            <a href="Documents/Robert-Haye-Resume.pdf" class="btn-flip" data-back="Download"
+                            <a href="src/documents/Robert-Haye-Resume.pdf" class="btn-flip" data-back="Download"
                                 data-front="My Résumé"></a>
                             <div class="contact-icon">
                                 <!-- ==== Contact Info STARTS ===== -->
@@ -129,7 +129,7 @@
                                 <h4>
                                     Databases
                                 </h4>
-                                <p>Being well versed in SQL Development I am able to design database implementations,
+                                <p>Being well versed in SQL and NoSQL I am able to design database implementations,
                                     structure proper model relationships and use effective queries for retrieving data.
                                 </p>
                             </div>
@@ -231,7 +231,8 @@
                                                         data-day="22"></span></p>
                                             </div>
                                             <div class="info-item padd-15">
-                                                <p>Degrees: <span>BA Business Admin., MBA</span>
+                                                <p>Degrees:<span><br>B.A. Business Administration, 2020<br>Master of Business Administration, 2022<br>B.S. Web and Mobile Computing, 2026
+                                                    </span>
                                                 </p>
                                             </div>
                                             <div class="info-item padd-15">
@@ -279,8 +280,8 @@
                             <label for="Slider1" class="Selector"></label>
                             <label for="Slider2" class="Selector"></label>
                             <label for="Slider3" class="Selector"></label>
-                            <!-- <label for="Slider4" class="Selector"></label>
-                            <label for="Slider5" class="Selector"></label>
+                            <label for="Slider4" class="Selector"></label>
+                            <!-- <label for="Slider5" class="Selector"></label>
                             <label for="Slider6" class="Selector"></label> -->
                         </div>
                         <div class="row Carrusels">
@@ -288,7 +289,7 @@
                             <!-- ======== My Work Item STARTS ======== -->
                             <div class="Carrusel">
                                 <figure class="my-work-item nopadding">
-                                    <img src="Images/Websites/Jammin-Cuisine-Newsletter.png" alt="Jammin Cuisine">
+                                    <img src="src/img/Websites/Jammin-Cuisine-Newsletter.png" alt="Jammin Cuisine">
                                     <figcaption>
                                         <h2>
                                             Jammin' Cuisine
@@ -304,7 +305,7 @@
                             <!-- ======== My Work Item STARTS ======== -->
                             <div class="Carrusel">
                                 <figure class="my-work-item nopadding">
-                                    <img src="./Images/Websites/dogMeet.jpg" alt="Jammin Cuisine">
+                                    <img src="src/img/Websites/dogMeet.jpg" alt="Jammin Cuisine">
                                     <figcaption>
                                         <h2>
                                             dogMeet
@@ -320,7 +321,7 @@
                             <!-- ======== My Work Item STARTS ======== -->
                             <div class="Carrusel">
                                 <figure class="my-work-item nopadding">
-                                    <img src="./Images/Websites/todolist.png"
+                                    <img src="src/img/Websites/todolist.png"
                                         alt="todolist">
                                     <figcaption>
                                         <h2>
@@ -337,15 +338,14 @@
                             <!-- ======== My Work Item STARTS ======== -->
                             <div class="Carrusel hidden">
                                 <figure class="my-work-item nopadding">
-                                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample40.jpg"
+                                    <img src="src/img/Websites/blog.png"
                                         alt="Jammin Cuisine">
                                     <figcaption>
                                         <h2>
-                                            Lorem
+                                            Personal Blog
                                         </h2>
-                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, nemo
-                                            voluptatibus.</p>
-                                        <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample40.jpg"
+                                        <p>Created using HTML, CSS, javascript, node.js, ejs, and mongoDB utilizing mongoDB Mongoose to store database.</p>
+                                        <a href="https://robert-personal-blog-app.herokuapp.com"
                                             class="button-hover">Visit Site</a>
                                     </figcaption>
                                 </figure>
@@ -388,7 +388,7 @@
                             <!-- ======== My Work Item ENDS ======== -->
 
 
-                            <label for="Slider3" class="ArrowLeft Arrow1">
+                            <label for="Slider4" class="ArrowLeft Arrow1">
                                 <p>❮</p>
                             </label>
                             <label for="Slider1" class="ArrowLeft Arrow2">
@@ -414,10 +414,10 @@
                             <label for="Slider3" class="ArrowRight Arrow2">
                                 <p>❯</p>
                             </label>
-                            <label for="Slider1" class="ArrowRight Arrow3">
+                            <label for="Slider4" class="ArrowRight Arrow3">
                                 <p>❯</p>
                             </label>
-                            <label for="Slider5" class="ArrowRight Arrow4">
+                            <label for="Slider1" class="ArrowRight Arrow4">
                                 <p>❯</p>
                             </label>
                             <label for="Slider6" class="ArrowRight Arrow5">
@@ -532,7 +532,7 @@
     <!-- ====== Main Container END ====== -->
 
     <!-- linked javascript  -->
-    <script src="./javascript/main.js"></script>
+    <script src="src/js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer">
     </script>
 

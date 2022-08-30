@@ -34,7 +34,7 @@ html {
 
 .button-hover:hover {
   background-color: #ffffff;
-  color: #22170F !important;
+  color: #22170f !important;
 }
 
 .padd-15 {
@@ -83,7 +83,7 @@ body .main-container .section:nth-of-type(1) {
 }
 
 body .main-container .section:nth-of-type(2) {
-  background: url("..//Images/Background.jpg");
+  background: url("../img/Background.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -182,7 +182,7 @@ body .main-container .section .container .row .section-title h2::after {
 }
 
 .home .home-info h3 {
-  color: #22170F;
+  color: #22170f;
 }
 
 .home .home-info .hello {
@@ -192,13 +192,13 @@ body .main-container .section .container .row .section-title h2::after {
 
 .home .home-info .hello span {
   color: #ff3333;
-  font-family: 'Clicker Script', cursive;
+  font-family: "Clicker Script", cursive;
   font-size: 30px;
   font-weight: 900;
 }
 
 .home .home-info .my-profession {
-  color: #22170F;
+  color: #22170f;
   font-size: 30px;
   margin: 15px 0;
 }
@@ -209,13 +209,13 @@ body .main-container .section .container .row .section-title h2::after {
 }
 
 .home .home-info h3 {
-  color: #22170F;
+  color: #22170f;
 }
 
 .home .home-info p {
   margin-bottom: 70px;
   font-size: 20px;
-  color: #22170F;
+  color: #22170f;
 }
 
 .home .home-info .btn-flip {
@@ -313,7 +313,7 @@ body .main-container .section .container .row .section-title h2::after {
 
 .home .home-info .contact-icon .contact-info-item .icon i {
   font-size: 23px;
-  color: #22170F;
+  color: #22170f;
 }
 
 .home .home-info .contact-icon .contact-info-item .icon .github {
@@ -327,7 +327,7 @@ body .main-container .section .container .row .section-title h2::after {
   width: 55%;
   height: 100vh;
   position: relative;
-  background-image: url("../Images/ProfilePicture.png");
+  background-image: url("../img/ProfilePicture.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom center;
@@ -336,7 +336,7 @@ body .main-container .section .container .row .section-title h2::after {
 /* ====== Home Section END ====== */
 /* ====== Service Section START ====== */
 .service h2 {
-  color: #22170F;
+  color: #22170f;
 }
 
 .service .container {
@@ -365,7 +365,7 @@ body .main-container .section .container .row .section-title h2::after {
 .service .service-item p {
   font-size: 90%;
   color: floralwhite;
-  line-height: 25PX;
+  line-height: 25px;
 }
 
 .service .service-item .service-item-inner {
@@ -460,7 +460,7 @@ body .main-container .section .container .row .section-title h2::after {
 .about .about-content .about-text p {
   font-size: 16px;
   line-height: 25px;
-  color: #22170F;
+  color: #22170f;
 }
 
 .about .about-content .personal-info {
@@ -505,7 +505,11 @@ body .main-container .section .container .row .section-title h2::after {
 }
 
 /* ====== About Section END ====== */
-/* ====== My Work Section END ====== */
+/* ====== My Work Section STARTS ====== */
+ul {
+  list-style-type: none;
+}
+
 .checkedstatus {
   display: none;
 }
@@ -519,7 +523,7 @@ body .main-container .section .container .row .section-title h2::after {
 }
 
 .my-work {
-  background: #414a4c !important;
+  background: #4c4148 !important;
   /* ===== Animation STARTS =====*/
   /* ===== Animation ENDS =====*/
 }
@@ -555,7 +559,7 @@ body .main-container .section .container .row .section-title h2::after {
 }
 
 .my-work figure.my-work-item {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   color: #ffff;
   position: relative;
   overflow: hidden;
@@ -604,7 +608,7 @@ body .main-container .section .container .row .section-title h2::after {
   bottom: 30px;
   left: 100%;
   border-left: 4px solid red;
-  content: '';
+  content: "";
   opacity: 0;
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-transition: all 0.5s;
@@ -752,8 +756,8 @@ body .main-container .section .container .row .section-title h2::after {
   padding: 10px 25px;
   font-size: 16px;
   color: var(--text-black-700);
-  -webkit-transition: all 0.3S ease;
-  transition: all 0.3S ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact .contact-form .form-item .form-control:focus {
@@ -795,7 +799,7 @@ body .main-container .section .container .row .section-title h2::after {
   width: 270px;
   right: 0;
   top: 0;
-  background: #7882A4;
+  background: #7882a4;
   height: 100%;
   padding: 30px;
   border-left: 1px solid #aab8e6;
@@ -820,11 +824,11 @@ body .main-container .section .container .row .section-title h2::after {
 }
 
 .side a {
-  color: #F0E5DD;
+  color: #f0e5dd;
 }
 
 .side .logo {
-  background-image: url("../Images/bg-logo.png");
+  background-image: url("../img/bg-logo.png");
   background-position: right 20px center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -838,7 +842,7 @@ body .main-container .section .container .row .section-title h2::after {
 .side .logo a {
   font-weight: 600;
   font-size: 50px;
-  color: #F0E5DD;
+  color: #f0e5dd;
 }
 
 .side .logo span {
@@ -865,8 +869,8 @@ body .main-container .section .container .row .section-title h2::after {
   font-size: 16px;
   font-weight: 600;
   display: block;
-  color: #F0E5DD;
-  border-bottom: 1px solid #F0E5DD;
+  color: #f0e5dd;
+  border-bottom: 1px solid #f0e5dd;
   padding: 15px 15px;
 }
 
@@ -890,8 +894,8 @@ body .main-container .section .container .row .section-title h2::after {
   font-size: 16px;
   font-weight: 600;
   display: block;
-  color: #F0E5DD;
-  border-bottom: 1px solid #F0E5DD;
+  color: #f0e5dd;
+  border-bottom: 1px solid #f0e5dd;
   padding: 15px 15px;
 }
 
@@ -916,7 +920,7 @@ input[type="checkbox"]:checked ~ #side {
           transform: translateX(0);
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-box-sizing: border-box;
@@ -940,7 +944,7 @@ input[type=checkbox] {
   width: 45px;
   border: 1px solid #69728e;
   border-radius: 5px;
-  background: #7882A4;
+  background: #7882a4;
   padding: 10px;
 }
 
@@ -984,7 +988,7 @@ input[type=checkbox] {
   margin-top: 3px;
 }
 
-input[type=checkbox]:checked ~ .sideIconToggle > .horizontal {
+input[type="checkbox"]:checked ~ .sideIconToggle > .horizontal {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-box-sizing: border-box;
@@ -992,7 +996,7 @@ input[type=checkbox]:checked ~ .sideIconToggle > .horizontal {
   opacity: 0;
 }
 
-input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-1 {
+input[type="checkbox"]:checked ~ .sideIconToggle > .diagonal.part-1 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-box-sizing: border-box;
@@ -1002,7 +1006,7 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-1 {
   margin-top: 8px;
 }
 
-input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
+input[type="checkbox"]:checked ~ .sideIconToggle > .diagonal.part-2 {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-box-sizing: border-box;
@@ -1146,8 +1150,8 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
     width: 100%;
     position: absolute;
     background-size: cover;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
   /* State 1 */
   #Slider1:checked ~ .Carrusels .Carrusel:nth-of-type(1) {
@@ -1370,7 +1374,7 @@ input[type=checkbox]:checked ~ .sideIconToggle > .diagonal.part-2 {
     gap: 5px;
   }
   .Selectors .Selector {
-    background-color: #FFF;
+    background-color: #fff;
     height: 10px;
     width: 10px;
     display: block;

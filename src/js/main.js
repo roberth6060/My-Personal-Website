@@ -1,7 +1,7 @@
 /* =================================== Auto age update =================================== */
 function AutoAge(birthYear, birthMonth, birthDay) {
-    var birthdate = new Date(birthYear, birthMonth - 1, birthDay);
-    var today = new Date();
+    let birthdate = new Date(birthYear, birthMonth - 1, birthDay);
+    let today = new Date();
     return Math.floor((today.getTime() - birthdate.getTime()) /
         1000 / 60 / 60 / 24 / 365);
 }
@@ -60,18 +60,16 @@ document.addEventListener('click', function (event) {
 /* ===================== Nav-links onScroll to active ===================== */
 
 
-var sections = document.querySelectorAll("section");
+let sections = document.querySelectorAll("section");
 
 onscroll = function () {
-    var scrollPosition = document.documentElement.scrollTop;
-
+    let scrollPosition = document.documentElement.scrollTop;
     sections.forEach((section) => {
         if (
             scrollPosition >= section.offsetTop - section.offsetHeight * 0.25 &&
-            scrollPosition <
-            section.offsetTop + section.offsetHeight - section.offsetHeight * 0.25
+            scrollPosition < section.offsetTop + section.offsetHeight - section.offsetHeight * 0.25
         ) {
-            var currentId = section.attributes.id.value;
+            let currentId = section.attributes.id.value;
             removeAllActiveClasses();
             addActiveClass(currentId);
         }
@@ -106,8 +104,8 @@ navLinks.forEach((link) => {
     });
 });
 /* ===================== Mailto JS ===================== */
-var now = new Date();
-var time = d.getHours()
+let now = new Date();
+let time = now.getHours()
 
 function sendMail() {
 
