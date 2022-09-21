@@ -1,4 +1,3 @@
-import Typed from "typed.js";
 /* =================================== Change status =================================== */
 const freelanceStatus = document.getElementById("freelance-status").innerText;
 
