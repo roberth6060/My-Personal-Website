@@ -12,21 +12,24 @@ if (freelanceStatus == "Available") {
 
 /* =================================== Typing animation =================================== */
 
-var typed = new Typed("#typing1", {
-  strings: ["", "web designer", "web developer", "avid gamer"],
-  typeSpeed: 100,
-  backSpeed: 60,
-  startDelay: 0,
-  loop: true,
-});
+function mainText() {
+  var typed = new Typed("#typing1", {
+    strings: ["", "web designer", "web developer", "graphic designer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    startDelay: 0,
+    loop: true,
+  });
 
-var typed = new Typed("#typing2", {
-  strings: ["", "USMC Veteran", "College Graduate"],
-  typeSpeed: 100,
-  backSpeed: 60,
-  startDelay: 0,
-  loop: true,
-});
+  var typed = new Typed("#typing2", {
+    strings: ["", "USMC Veteran", "College Graduate"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    startDelay: 0,
+    loop: true,
+  });
+}
+
 /* =================================== Side Section =================================== */
 
 function hideSidebar() {
@@ -64,9 +67,7 @@ var removeAllActiveClasses = function () {
 };
 
 var addActiveClass = function (id) {
-  // console.log(id);
   var selector = `nav a[href="#${id}"]`;
-  console.log(selector);
   document.querySelector(selector).classList.add("active");
 };
 
