@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/roberth6060/My-Personal-Website/issues"
   },
-  "homepage": "https://github.com/roberth6060/My-Personal-Website#readme"
+  "homepage": "https://github.com/roberth6060/My-Personal-Website#readme",
+  "dependencies": {
+    "typed.js": "^2.0.12"
+  }
 }

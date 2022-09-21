@@ -1,3 +1,4 @@
+import Typed from "typed.js";
 /* =================================== Change status =================================== */
 const freelanceStatus = document.getElementById("freelance-status").innerText;
 
@@ -11,23 +12,21 @@ if (freelanceStatus == "Available") {
 
 /* =================================== Typing animation =================================== */
 
-function mainText() {
-  var typed = new Typed("#typing1", {
-    strings: ["", "web designer", "web developer", "avid gamer"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    startDelay: 0,
-    loop: true,
-  });
+var typed = new Typed("#typing1", {
+  strings: ["", "web designer", "web developer", "avid gamer"],
+  typeSpeed: 100,
+  backSpeed: 60,
+  startDelay: 0,
+  loop: true,
+});
 
-  var typed = new Typed("#typing2", {
-    strings: ["", "USMC Veteran", "College Graduate"],
-    typeSpeed: 100,
-    backSpeed: 60,
-    startDelay: 0,
-    loop: true,
-  });
-}
+var typed = new Typed("#typing2", {
+  strings: ["", "USMC Veteran", "College Graduate"],
+  typeSpeed: 100,
+  backSpeed: 60,
+  startDelay: 0,
+  loop: true,
+});
 /* =================================== Side Section =================================== */
 
 function hideSidebar() {
